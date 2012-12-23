@@ -1,3 +1,7 @@
 .svn
 *~
 .*.swp
+wmiirc.log
+config.dump
+session.dump
+history/
