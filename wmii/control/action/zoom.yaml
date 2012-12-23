@@ -1,0 +1,61 @@
+require:
+  - securerandom
+
+script:
+  before:
+    - ZOOMED_SUFFIX = /!\d+\.[[:xdigit:]]+$/
+
+control:
+  action:
+
+    zoom_group: |
+      orig_clients = grouping
+
+      unless orig_clients.empty?
+        curr_client_before_zoom = curr_client
+
+        # calculate tag for temporary view
+        orig_tag = curr_tag
+        if orig_tag =~ ZOOMED_SUFFIX
+          orig_tag = $`
+        end
+
+        num = tags.grep(ZOOMED_SUFFIX).length
+        hex = SecureRandom.hex(2)
+        temp_tag = "#{orig_tag}!#{num}.#{hex}"
+
+        # travel to temporary view
+        temp_view = View.new(temp_tag)
+        temp_view.focus
+
+        # add chosen clients to temporary view
+        orig_clients.each {|c| c.tag temp_tag }
+
+        # restore focus on "current" client
+        curr_client_before_zoom.focus temp_view
+      end
+
+    unzoom_group: |
+      temp_clients = grouping
+
+      unless temp_clients.empty?
+        curr_client_before_zoom = curr_client
+        temp_tag = curr_tag
+
+        if temp_tag =~ ZOOMED_SUFFIX
+          orig_tag = $`
+
+          # travel to original view
+          orig_view = View.new(orig_tag)
+          orig_view.focus
+
+          # restore clients to original view
+          temp_clients.each do |c|
+            c.tag orig_tag
+            c.untag temp_tag
+          end
+
+          # restore focus on "current" client
+          curr_client_before_zoom.focus orig_view
+        end
+      end

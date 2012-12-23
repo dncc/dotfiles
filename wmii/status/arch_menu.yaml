@@ -1,0 +1,40 @@
+status:
+  arch_menu:
+    params:
+      menu_symbol: "\u039B" #2731 263C 2605 2638
+      choices: [ suspend, hibernate, reboot, shutdown ]
+
+    label: |
+      [ :focus, @menu_symbol]
+
+    script: |
+      def call(choice)
+         case choice
+         when "suspend"   then system 'sudo pm-suspend'
+         when "hibernate" then system 'sudo pm-hibernate'
+         when "shutdown"  then system 'sudo shutdown -h now'
+         when "reboot"    then system 'sudo reboot'
+         end
+      end
+
+      event 'FocusTag' do |tag|
+        @current_choice = tag
+      end
+
+      def current=choice
+        call choice
+      end
+
+      def choose
+        @current_choice = @menu_symbol
+        if choice = click_menu(@choices, @current_choice)
+          self.current = choice
+        end
+      end
+
+    control:
+      action:
+        arch_menu: self.choose
+
+      mouse_action:
+        left_click: arch_menu

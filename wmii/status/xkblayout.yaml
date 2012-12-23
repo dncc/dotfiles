@@ -1,0 +1,8 @@
+status:
+  xkblayout:
+
+    label: |
+      lang  = `xkblayout-state print %s` 
+      color = (lang == 'us' ? "greenfocus" : "notice")
+
+      [ color, "\u270E", lang ]

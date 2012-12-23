@@ -1,0 +1,7 @@
+import:
+  - display/desktop.yaml
+
+#do not show desktop image
+#control:
+#  action:
+#    desktop: launch! 'test -f ~/.fehbg && ~/.fehbg'

@@ -1,0 +1,172 @@
+import:
+  - control/mouse.yaml
+  - display/barlet.yaml
+
+script:
+  before:
+    - |
+      class StatusBarlet < Barlet
+        def initialize path
+          super path, :right
+        end
+      end
+
+      class StatusBarletSandbox < Sandbox
+        def initialize name, definition, instance, position, offset
+          definition_key = "status:#{name}"
+          instance_key = "display:status:#{name}##{offset}"
+
+          # restore instance variables from previous session
+          if session = SESSION[instance_key]
+            session.each do |variable, value|
+              instance_variable_set variable, value
+            end
+          end
+
+          # store instance variables for next session before exiting
+          at_exit do
+            SESSION[instance_key] = Hash[
+              instance_variables.map do |variable|
+                [variable, instance_variable_get(variable)]
+              end
+            ]
+          end
+
+          # merge the instance with the standard barlet definition
+          definition = Wmiirc::Import.merge({}, definition, definition_key)
+          Wmiirc::Import.merge definition, instance, instance_key, CONFIG.origins
+
+          if params = definition['params']
+            params.each do |key, value|
+              instance_variable_set "@#{key}", value
+            end
+          end
+
+          @id = offset
+
+          if code = definition['script']
+            instance_eval code.to_s,
+              CONFIG.origin(code, "#{definition_key}:script")
+          end
+
+          code = definition['label']
+          instance_eval "def label; #{code}; end",
+            CONFIG.origin(code, "#{definition_key}:label")
+
+          # buttons appear in ASCII order of their IXP file name
+          # so prepend a number to get ordered status bar applets
+          file = sprintf('%03d-%s-%d', position, name, offset)
+          button = StatusBarlet.new(file)
+
+          label_refresh_thread = Thread.new do
+            refresh_rate = definition['refresh'] ||
+              CONFIG['display']['refresh'] || 60
+            refresh_rate = nil if refresh_rate <= 0
+
+            colors_hash = CONFIG['display']['color']
+
+            loop do
+              button_label = begin
+                Array(self.label)
+              rescue Exception => e
+                LOG.error e
+                [colors_hash['error'], e]
+              end
+
+              # provide default color
+              possible_color = button_label.first.to_s
+              if colors_hash.key? possible_color
+                button_label[0] = colors_hash[possible_color]
+              elsif possible_color !~ /(?:#[[:xdigit:]]{6} ?){3}/
+                button_label.unshift colors_hash['normal']
+              end
+
+              button.colors = button_label.shift
+              button.label = button_label.compact.join(' ')
+
+              sleep *refresh_rate
+            end
+          end
+
+          singleton_class.class_eval do
+            define_method :refresh do
+              label_refresh_thread.wakeup if label_refresh_thread.alive?
+            end
+          end
+
+          # register action handlers
+          if control = definition['control']
+            action_by_local_name = {}
+
+            if actions = control['action']
+              actions.each do |action_name, code|
+                origin = CONFIG.origin(code, "#{definition_key}:control:action:#{action_name}")
+                handler = instance_eval("lambda {#{code}}", origin)
+
+                action_by_local_name[action_name] = handler
+
+                # first instance of this status bar applet gets the honor of
+                # registering its action handlers under the global namespace
+                unless Wmiirc.action? action_name
+                  Wmiirc.action action_name, &handler
+                end
+
+                # the offset suffix makes this action name unique to
+                # this particular instance of the status bar applet
+                # when we register the handler in the global namespace
+                Wmiirc.action "#{action_name}##{offset}", &handler
+              end
+            end
+
+            if mouse_actions = control['mouse_action']
+              Wmiirc.event 'RightBarClick' do |clicked_button, clicked_file|
+                if clicked_file == file
+                  if action = mouse_actions[Mouse[clicked_button]]
+                    if handler = action_by_local_name[action]
+                      # the given action is local to this status bar applet
+                      handler.call
+                    else
+                      # the given action is global to the wmii configuration
+                      Wmiirc.action action
+                    end
+                  end
+                end
+              end
+            end
+
+            if events = control['event']
+              events.each do |event_name, code|
+                origin = CONFIG.origin(code, "#{definition_key}:control:event:#{event_name}")
+                handler = instance_eval("lambda {|*argv| #{code}}", origin)
+                Wmiirc.event event_name, &handler
+              end
+            end
+          end
+        end
+      end
+
+  after:
+    - |
+      # populate the status bar with status barlet instances
+      fs.rbar.clear
+      count_by_name = Hash.new {|h,k| h[k] = 0 }
+
+      $status_barlets = Array(CONFIG['display']['status']).each_with_index.
+      map do |hash, position|
+        raise ArgumentError unless hash.length == 1
+        name, instance = hash.first
+        instance ||= {}
+
+        unless definition = CONFIG['status'][name]
+          raise ArgumentError, "no such status barlet: #{name.inspect}"
+        end
+
+        offset = count_by_name[name]
+        count_by_name[name] += 1
+
+        StatusBarletSandbox.new name, definition, instance, position, offset
+      end
+
+control:
+  action:
+    status_refresh: $status_barlets.each(&:refresh)

@@ -1,0 +1,13 @@
+# Common UI interaction cues from Blueprint CSS:
+# http://blueprintcss.org/tests/parts/forms.html
+display:
+  color:
+    info:       "#205791 #E6EFC2 #92CAE4"
+    error:      "#000d18 #cc7833 #000d18"  #FF8866 FFC377
+    #error:      "#8A1F11 #FBE3E4 #FBC2C4"
+    notice:     "#000d18 #FFF6BF #000d18" #FC720F FFD324
+    success:    "#264409 #E6EFC2 #C6D880"
+    redfocus:   "#000d18 #cc7833 #4f4f4f" #FF8866 FC720F FFC377
+    #redfocus:   "#000d18 #E7756B #4f4f4f"
+    greenfocus: "#000d18 #A5C261 #000d18"   #9ffc53 cae382
+    #greenfocus: "#000d18 #94E352 #4f4f4f"

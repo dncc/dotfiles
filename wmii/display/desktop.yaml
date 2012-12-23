@@ -1,0 +1,8 @@
+control:
+  action:
+    desktop: |
+      system "xsetroot -solid #{CONFIG['display']['color']['desktop']}"
+
+script:
+  after:
+    - action 'desktop'

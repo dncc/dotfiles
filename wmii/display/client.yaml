@@ -1,0 +1,36 @@
+import:
+  - control/mouse.yaml
+
+control:
+  event:
+    ClientMouseDown: |
+      client_id, mouse_code = argv
+      mouse_event = Mouse[mouse_code]
+
+      if mouse_event == 'right_click'
+        client = Client.new(client_id)
+
+        case click_menu %w[fullscreen stick group kill slay], 'client'
+        when 'fullscreen' then client.fullscreen!
+        when 'stick'      then client.stick!
+        when 'group'      then client.group!
+        when 'kill'       then client.kill
+        when 'slay'       then client.slay
+        end
+      end
+
+    Unresponsive: |
+      client = Client.new(argv[0])
+
+      IO.popen('xmessage -nearmouse -file - -buttons Kill,Wait -print', 'w+') do |f|
+        f.puts 'The following client is not responding.', ''
+        f.puts client.inspect
+        f.puts client.label.read
+
+        f.puts '', 'What would you like to do?'
+        f.close_write
+
+        if f.read.chomp == 'Kill'
+          client.slay
+        end
+      end

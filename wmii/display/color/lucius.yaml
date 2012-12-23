@@ -1,0 +1,7 @@
+# Colors from the "Lucius" color scheme for Vim:
+# http://www.vim.org/scripts/script.php?script_id=2536
+display:
+  color:
+    desktop:  "#363946" # LineNr
+    focus:    "#cae682 #505860 #303840" # PmenuSel
+    normal:   "#e0e0e0 #202020 #202438" # Normal

@@ -1,0 +1,5 @@
+display:
+  color:
+    desktop:  "#262626" #505860 #556f45 VisualNOS
+    focus:    "#E6EFC2 #444444 #262626" #F6F3E8 Cursor, Cursor, CursorColumn
+    normal:   "#E6EFC2 #232323 #292929" # Normal, CursorLine

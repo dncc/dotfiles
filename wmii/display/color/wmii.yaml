@@ -1,0 +1,7 @@
+# wmii's default color scheme,
+# extracted from cmd/wmii/dat.h
+display:
+  color:
+    desktop:  "#333333"
+    focus:    "#ffffff #335577 #447799"
+    normal:   "#222222 #eeeeee #666666"

@@ -1,0 +1,26 @@
+control:
+  action:
+
+    group_client!: |
+      curr_client.group!
+
+    group_area!: |
+      curr_area.group!
+
+    group_overlay!: |
+      Area.floating.group!
+
+    group_columns!: |
+      curr_view.managed_areas.each {|a| a.group! }
+
+    group_view!: |
+      curr_view.group!
+
+    group_all!: |
+      Rumai.group!
+
+    ungroup_all: |
+      Rumai.ungroup
+
+    group_kill: |
+      grouping.each {|c| c.kill }
