@@ -25,7 +25,7 @@ alias hibernate="sudo pm-hibernate"
 alias suspend="sudo pm-suspend"
 
 # alias for pacman
-alias pacman="sudo pacman-color"
+alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
