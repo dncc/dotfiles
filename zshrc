@@ -1,14 +1,17 @@
 #
 # ~/.zshrc
 #
-autoload omz
-zstyle :omz:style theme default
-plugins=(archlinux git)
-omz init
+source $ZSH/oh-my-zsh.sh
 
-#autoload -U compinit promptinit
-#compinit
-#promptinit
+plugins=(archlinux git)
+
+autoload -U compinit
+compinit
+zstyle ':completion:*' menu select
+
+autoload -U promptinit
+promptinit
+
 
 # add aliases for shutdown/reboot/suspend(to RAM)/hibernate
 alias reboot="sudo reboot"
@@ -21,13 +24,4 @@ alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
-# export ALTERNATE_EDITOR=""
-# ec is executable file in /usr/local/bin
-# with the following script:
-# exec /usr/bin/env emacsclient -c -a "" $*
-# or the same thing little bit different:
-# exec emacsclient --alternate-editor="" -c "$@"
-export EDITOR=/usr/local/bin/ec
-
-# save lot of shell history
-export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
+eval "$(rbenv init -)"

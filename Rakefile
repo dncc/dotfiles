@@ -3,8 +3,8 @@ require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
-  #install_oh_my_zsh
-  #switch_to_zsh
+  install_oh_my_zsh
+  switch_to_zsh
   replace_all = false
   files = Dir['*'] - %w[Rakefile README.rdoc LICENSE oh-my-zsh]
   #files << "oh-my-zsh/custom/plugins/rbates"
@@ -81,7 +81,10 @@ def install_oh_my_zsh
     case $stdin.gets.chomp
     when 'y'
       puts "installing oh-my-zsh"
-      system %Q{git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"}
+      system %Q{
+        git clone https://github.com/dncc/oh-my-zsh.git \
+                  "$HOME/.oh-my-zsh"
+      }
     when 'q'
       exit
     else
