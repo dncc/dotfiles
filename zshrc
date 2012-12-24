@@ -1,7 +1,6 @@
 #
 # ~/.zshrc
 #
-
 autoload omz
 zstyle :omz:style theme default
 plugins=(archlinux git)
@@ -10,13 +9,6 @@ omz init
 #autoload -U compinit promptinit
 #compinit
 #promptinit
-
-#ruby path
-export PATH="$PATH:/home/dnc/.rbenv/shims:/home/dnc/.rbenv/bin"
-#R path
-export R_HOME="/usr/lib/R"
-#antlr path
-export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
 
 # add aliases for shutdown/reboot/suspend(to RAM)/hibernate
 alias reboot="sudo reboot"
