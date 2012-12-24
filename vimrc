@@ -98,7 +98,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-autocmd BufWritePre *.* :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 " or the same thing w/ function
 "function! TrimWhiteSpace()
 "    %s/\s\+$//e
