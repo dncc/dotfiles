@@ -1,3 +1,27 @@
+# -------------------------------------------------------------------
+# Settings
+# -------------------------------------------------------------------
+crlf off                  # no microsoft linebreaks
+startup_message off       # bypass GPL notice (we're aware)
+defscrollback 15000       # big scrollback
+defmonitor on             # turn on monitoring
+activity "<%n>"           # let you know when stuff happens!
+silencewait 15            # notify when window goes silent
+nethack off               # makes error messages cryptic.
+bell_msg "DING! (%n)"
+vbell_msg "DING! (%n)"
+vbell on
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+autodetach on
+defutf8 on
+
+# status line
 hardstatus on
 hardstatus alwayslastline
 hardstatus string "%w%=%m/%d %c"
+
+# rebind ^A to ^O
+escape ^Oo
+
+# binds (C-a b) to copy screen clipboard to X clipboard (w/ xsel)
+bind b eval writebuf 'exec /bin/sh -c "xsel -i -b < /tmp/screen-exchange"' 'exec /bin/sh -c "killall xsel"'
