@@ -13,7 +13,8 @@ set ff=unix
 syntax on
 colorscheme sexy-railscasts
 
-"let mapleader = ","
+" instead of '\'
+let mapleader = ","
 
 "" Lusty Finder mappings
 "map <Leader>f :LustyFilesystemExplorer<CR>
@@ -42,8 +43,6 @@ set encoding=utf-8
 set nobackup
 set nowritebackup
 set noswapfile
-" auto indentation
-set autoindent
 " to move the cursor to the matching string,
 " while typing the search pattern
 set incsearch
@@ -67,10 +66,10 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 set guifont=Envy\ Code\ R
-"autoindent
+
 "set cindent "disables , if uncomented
-set smartindent
 set autoindent
+set smartindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
