@@ -3,7 +3,7 @@
 #
 source $ZSH/oh-my-zsh.sh
 
-plugins=(archlinux git)
+plugins=(archlinux gem bundler git)
 
 autoload -U compinit
 compinit
