@@ -1,13 +1,10 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="default"
-#ruby path
-export PATH="$PATH:/home/dnc/.rbenv/shims:/home/dnc/.rbenv/bin"
+
 #R path
 export R_HOME="/usr/lib/R"
 #antlr path
 export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
-
-export PATH="$HOME/.rbenv/bin:$PATH"
 
 # export ALTERNATE_EDITOR=""
 # ec is executable file in /usr/local/bin

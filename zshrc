@@ -1,6 +1,7 @@
 #
 # ~/.zshrc
 #
+
 source $ZSH/oh-my-zsh.sh
 
 plugins=(archlinux gem bundler git)
@@ -24,4 +25,5 @@ alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
+export PATH="$PATH:/home/dnc/.rbenv/shims:/home/dnc/.rbenv/bin"
 eval "$(rbenv init -)"
