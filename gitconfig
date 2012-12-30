@@ -1,5 +1,9 @@
 [user]
 	email = dcvetinovic@gmail.com
 	name = Dragan Cvetinovic
+[alias]
+  ci = commit
+  st = status
+  ll = log --pretty=oneline --abbrev-commit --max-count=15
 [color]
-	ui = true
+	ui = auto
