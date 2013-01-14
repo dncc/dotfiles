@@ -16,8 +16,6 @@ cd ~/workspace
 set fileencodings=utf-8
 set encoding=utf-8
 
-
-
 set nobackup                 " no backup files
 set nowritebackup
 set noswapfile               " no swap files
