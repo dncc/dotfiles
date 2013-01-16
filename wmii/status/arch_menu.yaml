@@ -9,12 +9,13 @@ status:
 
     script: |
       def call(choice)
-         case choice
-         when "suspend"   then system 'suspend'
-         when "hibernate" then system 'hibernate'
-         when "shutdown"  then system 'shutdown -h now'
-         when "reboot"    then system 'reboot'
-         end
+        if [ "reboot",
+             "suspend",
+             "shutdown",
+             "hibernate" ].include?(choice)
+
+          system "#{choice}"
+        end
       end
 
       event 'FocusTag' do |tag|
