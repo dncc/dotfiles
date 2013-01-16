@@ -10,10 +10,10 @@ status:
     script: |
       def call(choice)
          case choice
-         when "suspend"   then system 'sudo pm-suspend'
-         when "hibernate" then system 'sudo pm-hibernate'
-         when "shutdown"  then system 'sudo shutdown -h now'
-         when "reboot"    then system 'sudo reboot'
+         when "suspend"   then system 'suspend'
+         when "hibernate" then system 'hibernate'
+         when "shutdown"  then system 'shutdown -h now'
+         when "reboot"    then system 'reboot'
          end
       end
 
