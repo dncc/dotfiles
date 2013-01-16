@@ -27,3 +27,8 @@ alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 export PATH="/home/dnc/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# start services with systemd here, I'm
+# sure there is a better place for this
+sudo systemctl start network
+sudo systemctl start mysqld
