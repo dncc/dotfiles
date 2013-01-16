@@ -16,7 +16,7 @@ promptinit
 
 # add aliases for shutdown/reboot/suspend(to RAM)/hibernate
 alias reboot="sudo reboot"
-alias shutdown="sudo shutdown -h now"
+alias shutdown="sudo systemctl poweroff"
 alias hibernate="sudo systemctl hibernate"
 alias suspend="sudo systemctl suspend"
 
