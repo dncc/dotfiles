@@ -2,19 +2,15 @@ status:
   arch_menu:
     params:
       menu_symbol: "\u039B" #2731 263C 2605 2638
-      choices: [ suspend, hibernate, reboot, shutdown ]
+      choices: [ reboot, suspend, hibernate, poweroff]
 
     label: |
       [ :focus, @menu_symbol]
 
     script: |
       def call(choice)
-        if [ "reboot",
-             "suspend",
-             "shutdown",
-             "hibernate" ].include?(choice)
-
-          system "#{choice}"
+        if @choices.include?(choice)
+          system "sudo systemctl #{choice}"
         end
       end
 
@@ -22,14 +18,10 @@ status:
         @current_choice = tag
       end
 
-      def current=choice
-        call choice
-      end
-
       def choose
         @current_choice = @menu_symbol
         if choice = click_menu(@choices, @current_choice)
-          self.current = choice
+          self.call choice
         end
       end
 
