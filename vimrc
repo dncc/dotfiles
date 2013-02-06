@@ -69,7 +69,7 @@ let mapleader = ","
 " map <C-x>d :FufDir<CR>
 
 " try command-T
-nnoremap <silent> <C-x>f :CommandT<CR>
+nnoremap <silent> <C-x><C-f> :CommandT<CR>
 nnoremap <silent> <C-x>b :CommandTBuffer<CR>
 nnoremap <silent> <C-x>t :CommandTTag<CR>
 
