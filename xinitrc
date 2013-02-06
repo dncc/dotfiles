@@ -11,7 +11,7 @@ setxkbmap -layout "us,rs" -option "grp:alt_shift_toggle"
 #done
 #exec ck-launch-session bash -c "devmon & dwm"
 #
-exec ck-launch-session bash -c "devmon & wmii"
+exec dbus-launch --exit-with-session bash -c "udiskie & wmii"
 #(sleep 60 && /usr/local/bin/power-off-wlan0)
 
 
