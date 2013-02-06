@@ -64,9 +64,14 @@ let mapleader = ","
 " map <Leader>g :LustyBufferGrep<CR>
 
 " fuzzy finder mappings
-map <C-x>f :FufFile<CR>
-map <C-x>b :FufBuffer<CR>
-map <C-x>d :FufDir<CR>
+" map <C-x>f :FufFile<CR>
+" map <C-x>b :FufBuffer<CR>
+" map <C-x>d :FufDir<CR>
+
+" try command-T
+nnoremap <silent> <C-x>f :CommandT<CR>
+nnoremap <silent> <C-x>b :CommandTBuffer<CR>
+nnoremap <silent> <C-x>t :CommandTTag<CR>
 
 " make window wider/narrower
 map <C-h> <C-W><
