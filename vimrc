@@ -64,20 +64,20 @@ let mapleader = ","
 " map <Leader>g :LustyBufferGrep<CR>
 
 " fuzzy finder mappings
-" map <C-x>f :FufFile<CR>
-" map <C-x>b :FufBuffer<CR>
-" map <C-x>d :FufDir<CR>
+map <C-x>f :FufFile<CR>
+map <C-x>b :FufBuffer<CR>
+map <C-x>d :FufDir<CR>
 
-" try command-T
+" try command-T it crashes vim
 " after a file is selected use <C-v>, <C-t>
 " to open the file with vertical split, or
 " in a new tab, <C-e> to the end of list,
 " <C-a> to the start, <C-c> quit.
-nnoremap <silent> <C-x><C-f> :CommandT<CR>
-nnoremap <silent> <C-x>b :CommandTBuffer<CR>
-nnoremap <silent> <C-x>t :CommandTTag<CR>
-" refresh command-t cache with new files
-nnoremap <silent> <C-x>l :CommandTFlush<CR>
+" nnoremap <silent> <C-x><C-f> :CommandT<CR>
+" nnoremap <silent> <C-x>b :CommandTBuffer<CR>
+" nnoremap <silent> <C-x>t :CommandTTag<CR>
+" " refresh command-t cache with new files
+" nnoremap <silent> <C-x>l :CommandTFlush<CR>
 
 " make window wider/narrower
 map <C-h> <C-W><
@@ -92,7 +92,7 @@ map <C-[> :bp<CR>
 " hash rocket
 imap <C-l> <Space>=><Space>
 " pointer arrow
-imap <C-j> <Space>-><Space>
+imap <C-j> ->
 " R assignment
 imap <C-h> <Space><-<Space>
 
