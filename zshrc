@@ -25,10 +25,7 @@ alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
-#export PATH="/home/dnc/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-
-RUBIES=(~/.rbenv/versions/*)
+RUBIES=(~/.rubies/versions/*)
 source /usr/local/share/chruby/chruby.sh
 # look for local ruby version for each
 # project in "${project}/.ruby-version" file
