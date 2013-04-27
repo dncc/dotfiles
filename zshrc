@@ -25,8 +25,12 @@ alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
-export PATH="/home/dnc/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="/home/dnc/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
+
+RUBIES=(~/.rbenv/versions/*)
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
 # start services with systemd here, I'm
 # sure there is a better place for this
