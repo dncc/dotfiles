@@ -30,6 +30,8 @@ alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 RUBIES=(~/.rbenv/versions/*)
 source /usr/local/share/chruby/chruby.sh
+# look for local ruby version for each
+# project in "${project}/.ruby-version" file
 source /usr/local/share/chruby/auto.sh
 
 # start services with systemd here, I'm
