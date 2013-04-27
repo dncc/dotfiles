@@ -25,7 +25,7 @@ alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
-RUBIES=(~/.rubies/versions/*)
+RUBIES=(~/.rbenv/versions/*)
 source /usr/local/share/chruby/chruby.sh
 # look for local ruby version for each
 # project in "${project}/.ruby-version" file
