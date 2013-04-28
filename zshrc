@@ -29,9 +29,11 @@ source /usr/local/share/chruby/chruby.sh
 # look for local ruby version for each
 # project in "${project}/.ruby-version" file
 source /usr/local/share/chruby/auto.sh
-RUBIES=(~/.rbenv/versions/*)
+# default rubies directory is ~/.rubies,
+# but we can set rubies directory with
+# RUBIES=(~/.rbenv/versions/*)
 # set default ruby
-chruby 2.0.0-rc1
+chruby ruby-2.0.0-p0
 
 # start services with systemd here, I'm
 # sure there is a better place for this
