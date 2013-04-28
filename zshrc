@@ -25,11 +25,13 @@ alias pacman="sudo pacman"
 # add alias for node
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
-RUBIES=(~/.rbenv/versions/*)
 source /usr/local/share/chruby/chruby.sh
 # look for local ruby version for each
 # project in "${project}/.ruby-version" file
 source /usr/local/share/chruby/auto.sh
+RUBIES=(~/.rbenv/versions/*)
+# set default ruby
+chruby 2.0.0-rc1
 
 # start services with systemd here, I'm
 # sure there is a better place for this
