@@ -1,6 +1,21 @@
 set nocompatible
 set hidden
 
+" maximize gvim window
+if has("gui_running")
+  " GUI is running or is about to start.
+  " Maximize gvim window.
+  set lines=999 columns=999
+else
+  " This is console Vim.
+  if exists("+lines")
+    set lines=50
+  endif
+  if exists("+columns")
+    set columns=100
+  endif
+endif
+
 " The default for 'backspace' is very confusing to new users, so change it to a
 " more sensible value. Add "set backspace&" to your ~/.vimrc to reset it.
 set backspace+=indent,eol,start
@@ -10,7 +25,8 @@ set ff=unix
 
 "set nu!
 syntax on
-colorscheme sexy-railscasts
+set background=dark
+colorscheme solarized
 
 cd ~/workspace
 set fileencodings=utf-8
@@ -35,7 +51,7 @@ set guioptions-=r            " no scrollbar
 set guioptions-=L            " no scrollbar for NTree
 set guioptions-=e            " no GUI tab bar
 
-set guifont=Envy\ Code\ R
+set guifont=Envy\ Code\ R\ 11 " Terminus
 
 " ---------------------------------------------------------------
 " Text Formatting
@@ -43,13 +59,14 @@ set guifont=Envy\ Code\ R
 set autoindent                " automatic indent new lines
 set smartindent               " be smart about indent
 set expandtab                 " expand tabs to spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set textwidth=80              " wrap at 80 chars by default
 "set cindent                  " disables , if uncomented
 set cinkeys=0{,0},:,0#,!,!^F
 
+set list listchars=tab:▷⋅
 "----------------------------------------------------------------
 " Mappings
 "----------------------------------------------------------------
@@ -83,7 +100,12 @@ map <C-x>d :FufDir<CR>
 map <C-h> <C-W><
 map <C-l> <C-W>>
 
+" NERDTree config
+set autochdir
+let NERDTreeChDirMode=2
 map <C-c>X :NERDTreeToggle<CR>
+
+
 
 " map next and previous buffer command
 map <C-]> :bn<CR>
