@@ -1,47 +1,51 @@
 ! xterm -----------------------------------------------
-xterm*geometry:           80x25
-xterm*faceName:           courier:size=9:charwidth=7
-!xterm*font:              -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
-xterm*dynamicColors:      true
-xterm*utf8:               2
-xterm*eightBitInput:      true
-xterm*saveLines:          1024
-xterm*scrollKey:          true
-xterm*scrollTtyOutput:    false
-xterm*jumpScroll:         true
-xterm*multiScroll:        true
-xterm*toolBar:            false
+!xterm*geometry: 80x25
+!xterm*faceName: courier:size=9:charwidth=7
+!!xterm*font: -*-dina-medium-r-*-*-16-*-*-*-*-*-*-*
+!xterm*dynamicColors: true
+!xterm*utf8: 2
+!xterm*eightBitInput: true
+!xterm*saveLines: 1024
+!xterm*scrollKey: true
+!xterm*scrollTtyOutput: false
+!xterm*jumpScroll: true
+!xterm*multiScroll: true
+!xterm*toolBar: false
 
 !deactivate scroll bar
 URxvt.scrollBar: false
-URxvt.font:      xft:courier:size=9:charwidth=7
+
+! URxvt.font: xft:envy code r:pixelsize=15
+! URxvt.font: xft:courier:size=9:charwidth=7
+
+URxvt.iconFile: /usr/share/icons/Mint-X/apps/scalable/terminal.svg
+
 !:antialias=false
 ! terminal colors ----------------------------------------
 ! tangoesque scheme
 *background: #232323
 *foreground: #babdb6
 ! Black (not tango) + DarkGrey
-*color0:  #000000
-*color8:  #555753
+*color0: #000000
+*color8: #555753
 ! DarkRed + Red
-*color1:  #ff6565
-*color9:  #ff8d8d
+*color1: #ff6565
+*color9: #ff8d8d
 ! DarkGreen + Green
-*color2:  #93d44f
+*color2: #93d44f
 *color10: #c8e7a8
 ! DarkYellow + Yellow
-*color3:  #eab93d
+*color3: #eab93d
 *color11: #ffc123
 ! DarkBlue + Blue
-*color4:  #204a87
+*color4: #204a87
 *color12: #3465a4
 ! DarkMangenta + Mangenta
-*color5:  #ce5c00
+*color5: #ce5c00
 *color13: #f57900
 !DarkCyan + Cyan (both not tango)
-*color6:  #89b6e2
+*color6: #89b6e2
 *color14: #46a4ff
 ! LightGrey + White
-*color7:  #cccccc
+*color7: #cccccc
 *color15: #ffffff
-
