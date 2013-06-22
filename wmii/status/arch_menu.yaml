@@ -2,7 +2,7 @@ status:
   arch_menu:
     params:
       menu_symbol: "\u039B" #2731 263C 2605 2638
-      choices: [ reboot, suspend, hibernate, poweroff]
+      choices: [ reboot, pm-suspend, pm-hibernate, poweroff]
 
     label: |
       [ :focus, @menu_symbol]
@@ -10,7 +10,7 @@ status:
     script: |
       def call(choice)
         if @choices.include?(choice)
-          system "sudo systemctl #{choice}"
+          system "sudo #{choice}"
         end
       end
 
