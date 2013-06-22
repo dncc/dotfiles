@@ -115,7 +115,7 @@ display:
     #      path: $HOME
     - network:
         params:
-          interface: eth0 #wlan0
+          interface: wlan0 #eth0
     #- thermal:
     - memory:
     - loadavg:
@@ -129,7 +129,7 @@ display:
 
 control:
   action:
-    launch_terminal:  launch 'urxvt' #xterm
+    launch_terminal:  launch 'gnome-terminal' #urxvt xterm
     launch_browser:  launch 'firefox'
     #launch_filer:  launch 'pcmanfm'
     launch_emacs:  launch 'ec'
@@ -197,7 +197,7 @@ control:
     down:    j
     left:    h
     right:   l
-    root:    Mod4-
+    root:    Mod1-       # changed from Win to Alt key
     send:    ${root}Shift-
     size:    ${root}Control-
     swap:    ${root}w,
@@ -228,7 +228,7 @@ control:
 
     ${root}q:                 focus_client_menu
     ${root}Shift-a:           client_invite_menu
-    ${root}f:                 client_fullscreen!
+    ${root}Shift-f:           client_fullscreen!
 
     ${root}${up}:             focus_client_up
     ${root}${down}:           focus_client_down
