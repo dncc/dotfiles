@@ -105,7 +105,8 @@ set autochdir
 let NERDTreeChDirMode=2
 map <C-c>X :NERDTreeToggle<CR>
 
-
+" send current buffer to gist.github.com/dncc
+map <C-c>G :Gist
 
 " map next and previous buffer command
 map <C-]> :bn<CR>
