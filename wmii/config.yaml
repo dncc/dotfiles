@@ -115,7 +115,7 @@ display:
     #      path: $HOME
     - network:
         params:
-          interface: wlan0 #eth0
+          interface: eth0 #wlan0
     #- thermal:
     - memory:
     - loadavg:
