@@ -10,3 +10,5 @@
 	ui = auto
 [github]
 	user = dncc
+[push]
+	default = simple
