@@ -8,3 +8,5 @@
   fp = format-patch
 [color]
 	ui = auto
+[github]
+	user = dncc
