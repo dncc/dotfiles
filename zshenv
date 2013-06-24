@@ -12,7 +12,7 @@ export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
 # exec /usr/bin/env emacsclient -c -a "" $*
 # or the same thing little bit different:
 # exec emacsclient --alternate-editor="" -c "$@"
-export EDITOR=/usr/local/bin/ec
+export EDITOR=/usr/bin/gvim
 
 # save lot of shell history
 export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
