@@ -162,7 +162,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " ---------------------------------------------------------------------------
 
 "use tmux instead of screen (which is default)
-"let g:slime_target = "tmux"
-"let g:slime_paste_file = "$HOME/.slime_paste"
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
 
 
