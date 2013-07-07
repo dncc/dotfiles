@@ -20,8 +20,8 @@ hardstatus on
 hardstatus alwayslastline
 hardstatus string "%w%=%m/%d %c"
 
-# rebind ^A to ^O
-escape ^Oo
+# rebind ^A to ^W
+escape ^Ww
 
 # binds (C-a b) to copy screen clipboard to X clipboard (w/ xsel)
 bind b eval writebuf 'exec /bin/sh -c "xsel -i -b < /tmp/screen-exchange"' 'exec /bin/sh -c "killall xsel"'
