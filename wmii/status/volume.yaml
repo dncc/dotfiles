@@ -90,8 +90,8 @@ status:
       end
 
     label: |
-      color = mute? ? 'notice' : 
-              (level.to_i > 30 && level.to_i < 82 ) ? 'greenfocus' : 
+      color = mute? ? 'notice' :
+              (level.to_i > 30 && level.to_i < 82 ) ? 'greenfocus' :
               (level.to_i > 81 && level.to_i < 93 ) ? 'notice' : 'redfocus'
 
       pic   = mute? ? "\u266A" : "\u266A"

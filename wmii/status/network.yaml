@@ -4,6 +4,7 @@ status:
       ifconfig_bin: ifconfig
       iwconfig_bin: iwconfig
       interface: lo
+      interfaces: [ eth0, wlan0 ]
 
     script: |
       def ifconfig
@@ -12,6 +13,14 @@ status:
 
       def iwconfig
         `#{@iwconfig_bin} #{@interface} 2>/dev/null`
+      end
+
+      def choose
+        current = @interface
+        if choice = click_menu(@interfaces, current)
+           @interface = choice
+           refresh
+        end
       end
 
     label: |
@@ -37,6 +46,8 @@ status:
     control:
       action:
         network_details: dialog [iwconfig, ifconfig].join
+        network_interfaces: self.choose
 
       mouse_action:
-        left_click: network_details
+        left_click: network_interfaces
+        right_click: network_details
