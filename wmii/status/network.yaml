@@ -3,7 +3,7 @@ status:
     params:
       ifconfig_bin: ifconfig
       iwconfig_bin: iwconfig
-      interface: lo
+      interface: eth0
       interfaces: [ eth0, wlan0 ]
 
     script: |
