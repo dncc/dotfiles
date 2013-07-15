@@ -66,7 +66,7 @@ set textwidth=80              " wrap at 80 chars by default
 "set cindent                  " disables , if uncomented
 set cinkeys=0{,0},:,0#,!,!^F
 
-set list listchars=tab:▷⋅
+"set list listchars=tab:▷⋅
 "----------------------------------------------------------------
 " Mappings
 "----------------------------------------------------------------
