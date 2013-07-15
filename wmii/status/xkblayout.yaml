@@ -15,7 +15,7 @@ status:
       end
 
       def set_xkb_layout
-        `#{@xkb_bin} -s #{@layout}`
+        `#{@xkb_bin} -s "#{@layout}"`
       end
 
       def choose
@@ -29,7 +29,7 @@ status:
 
     label: |
       lang  = self.xkb_current_layout
-      color = (lang == "us" ? "greenfocus" : "notice")
+      color = (lang == "us" ? "greenfocus" : lang == "rs(basic)" ? "redfocus" : "notice")
       [ color, "\u270E", lang ]
 
     control:
