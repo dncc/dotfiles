@@ -21,6 +21,10 @@ xrdb -merge ~/.Xresources
 # alias hibernate="sudo hibernate"
 # alias suspend="sudo suspend"
 
+# set serbian and us english keyboard layout
+# now set up in /etc/default/keyboard instead
+# setxkbmap -layout "us, rs" -option "grp:alt_shift_toggle"
+
 # map CapsLock to CTRL
 (source /usr/local/share/keymappings/caps_to_ctrl.sh) 2>/dev/null
 
