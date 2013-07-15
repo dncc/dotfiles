@@ -129,7 +129,7 @@ display:
 
 control:
   action:
-    launch_terminal:  launch 'gnome-terminal' #urxvt xterm
+    launch_terminal:  launch 'gnome-terminal'
     launch_browser:  launch 'firefox'
     #launch_filer:  launch 'pcmanfm'
     launch_emacs:  launch 'ec'
