@@ -1,7 +1,7 @@
 status:
   clock:
+    refresh: 60
     params:
-      refresh: 1
       format: '%c'
 
     label: |
