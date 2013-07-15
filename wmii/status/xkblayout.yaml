@@ -1,11 +1,41 @@
 status:
   xkblayout:
+    refresh: 10
+    params:
+      xkb_bin: "xkb-switch"
+      layout: us
+
+    script: |
+      def xkb_layouts
+        `#{@xkb_bin} -l 2>&1`.split
+      end
+
+      def xkb_current_layout
+        `#{@xkb_bin}`.chomp
+      end
+
+      def set_xkb_layout
+        `#{@xkb_bin} -s #{@layout}`
+      end
+
+      def choose
+        current = @layout
+        if choice = click_menu(self.xkb_layouts, current)
+           @layout = choice
+           set_xkb_layout
+           refresh
+        end
+      end
 
     label: |
-      lang  = `setxkbmap -query |
-               grep layout      |
-               sed -e 's/layout://;'`.strip
-
-      color = (lang == 'us' ? "greenfocus" : "notice")
-
+      lang  = self.xkb_current_layout
+      color = (lang == "us" ? "greenfocus" : "notice")
       [ color, "\u270E", lang ]
+
+    control:
+      action:
+        keyboard_layouts: self.choose
+
+      mouse_action:
+        left_click: keyboard_layouts
+
