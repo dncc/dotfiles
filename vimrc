@@ -58,7 +58,7 @@ set guifont=Envy\ Code\ R\ 11 " Terminus
 " ---------------------------------------------------------------
 set autoindent                " automatic indent new lines
 set smartindent               " be smart about indent
-set expandtab                 " expand tabs to spaces
+" set expandtab               " expand tabs to spaces
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -106,7 +106,9 @@ let NERDTreeChDirMode=2
 map <C-c>X :NERDTreeToggle<CR>
 
 " send current buffer to gist.github.com/dncc
+" :Gist gist-num to get gist from github
 map <C-c>G :Gist
+map <C-c>g :Gist
 
 " map next and previous buffer command
 map <C-]> :bn<CR>
@@ -138,26 +140,6 @@ map ,d :e %:h/<CR>
 map ,dt :tabnew %:h/<CR>
 
 " ---------------------------------------------------------------------------
-" highlight & strip trailing whitespaces for _all_ files
-" ---------------------------------------------------------------------------
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
-autocmd BufWritePre * :%s/\s\+$//e
-
-" or the same thing w/ function
-" function! TrimWhiteSpace()
-"     %s/\s\+$//e
-" endfunction
-" autocmd BufWritePre *.* :call TrimWhiteSpace()
-" end highlight & strip trailing whitespaces
-
-" ---------------------------------------------------------------------------
 " Vim - Slime
 " ---------------------------------------------------------------------------
 
@@ -165,4 +147,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 
-
+" put html bindings for .ejs files for syntax hightlight
+au BufNewFile,BufRead *.ejs set filetype=html
