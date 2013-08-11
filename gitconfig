@@ -11,4 +11,4 @@
 [github]
 	user = dncc
 [push]
-	default = simple
+	default = current

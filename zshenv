@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="default"
+ZSH_THEME="m0nk"
 
 #R path
 export R_HOME="/usr/lib/R"
