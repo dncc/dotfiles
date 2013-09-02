@@ -24,9 +24,11 @@ set backspace+=indent,eol,start
 set ff=unix
 
 "set nu!
-syntax on
 set background=dark
 colorscheme solarized
+
+" keep old NERDTree |~, + instead of fency >
+let NERDTreeDirArrows=0
 
 cd ~/workspace
 set fileencoding=utf-8
@@ -40,6 +42,9 @@ set noswapfile               " no swap files
 " while typing the search pattern
 set incsearch
 
+" set pathogen runtime path manipulation
+execute pathogen#infect()
+syntax on
 filetype plugin indent on
 
 "disable BOM character <U-FEFF>
