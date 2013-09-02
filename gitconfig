@@ -12,3 +12,5 @@
 	user = dncc
 [push]
 	default = current
+[core]
+	autocrlf = input

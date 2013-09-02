@@ -29,7 +29,7 @@ set background=dark
 colorscheme solarized
 
 cd ~/workspace
-set fileencodings=utf-8
+set fileencoding=utf-8
 set encoding=utf-8
 
 set nobackup                 " no backup files
@@ -40,7 +40,7 @@ set noswapfile               " no swap files
 " while typing the search pattern
 set incsearch
 
-filetype plugin on
+filetype plugin indent on
 
 "disable BOM character <U-FEFF>
 set nobomb
@@ -140,6 +140,19 @@ map ,d :e %:h/<CR>
 map ,dt :tabnew %:h/<CR>
 
 " ---------------------------------------------------------------------------
+" highlight & strip trailing whitespaces for _all_ files
+" ---------------------------------------------------------------------------
+
+highlight ExtraWhitespace ctermbg=red guibg=#DA4939
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+"
+autocmd BufWritePre * :%s/\s\+$//e
+
+" ---------------------------------------------------------------------------
 " Vim - Slime
 " ---------------------------------------------------------------------------
 
@@ -149,3 +162,4 @@ let g:slime_paste_file = "$HOME/.slime_paste"
 
 " put html bindings for .ejs files for syntax hightlight
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufRead,BufNewFile *.go set filetype=go

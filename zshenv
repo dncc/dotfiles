@@ -15,5 +15,8 @@ export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
 export EDITOR=/usr/bin/gvim
 
 # save lot of shell history
-export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=~/.zhistory
+export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=$HOME/.zhistory
+
+# interactive startup file for python shell
+export PYTHONSTARTUP=$HOME/.pythonrc
 

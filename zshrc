@@ -13,7 +13,7 @@ autoload -U promptinit
 promptinit
 
 # load settings for urxvt (previously in xinitrc)
-xrdb -merge ~/.Xresources
+# xrdb -merge ~/.Xresources
 
 # add aliases for shutdown/reboot/suspend(to RAM)/hibernate
 # alias reboot="sudo reboot"
@@ -48,3 +48,4 @@ chruby 2.0.0 1>/dev/null
 # sure there is a better place for this
 # sudo systemctl start network
 # sudo systemctl start mysqld
+xsetroot -solid "#545454" 2>/dev/null

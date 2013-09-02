@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/dnc/downloads/compact-language-detector-0.1'
+let g:netrw_dirhist_2='/home/dnc/workspace/cliqz/sandbox/query-19-08-2013'
+let g:netrw_dirhist_3='/home/dnc/downloads/codesearch'
