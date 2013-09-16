@@ -49,3 +49,5 @@ chruby 2.0.0 1>/dev/null
 # sudo systemctl start network
 # sudo systemctl start mysqld
 xsetroot -solid "#545454" 2>/dev/null
+
+source ~/.aliases

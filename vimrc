@@ -108,6 +108,7 @@ map <C-l> <C-W>>
 " NERDTree config
 set autochdir
 let NERDTreeChDirMode=2
+let g:NERDTreeWinSize=20
 map <C-c>X :NERDTreeToggle<CR>
 
 " send current buffer to gist.github.com/dncc
@@ -153,9 +154,9 @@ match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+"autocmd BufWinLeave * call clearmatches()
 "
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 " ---------------------------------------------------------------------------
 " Vim - Slime

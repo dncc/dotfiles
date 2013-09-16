@@ -1,0 +1,17 @@
+#!/bin/bash
+
+alias apt-get="sudo apt-get"
+
+# cliqz aliases
+alias set-aws-env="~/workspace/cliqz/local/bin/setup_cluster_env.sh"
+alias load-aws-env="source ~/workspace/cliqz/local/bin/load_cluster_env.sh"
+alias set-pypath="source ~/workspace/cliqz/deploy/env.sh"
+alias dmz-socks="~/workspace/scripts/cliqz/dmz-ssh"
+
+alias check-aws="~/workspace/cliqz/deploy/cluster_tasks.sh check"
+
+function load-cluster() {
+	load-aws-env $1
+	set-pypath
+	dmz-socks
+}
