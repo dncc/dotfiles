@@ -51,3 +51,6 @@ chruby 2.0.0 1>/dev/null
 xsetroot -solid "#545454" 2>/dev/null
 
 source ~/.aliases
+# ssh-add for cliqz check and zabbix to work properly
+eval `ssh-agent -s`
+ssh-add

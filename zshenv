@@ -19,4 +19,5 @@ export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=$HOME/.zhistory
 
 # interactive startup file for python shell
 export PYTHONSTARTUP=$HOME/.pythonrc
-
+# export 256 color terminal
+export TERM="xterm-256color"
