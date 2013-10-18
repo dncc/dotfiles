@@ -14,3 +14,5 @@ function cliqz-load-cluster() {
 	cliqz-dmz-socks
 }
 
+alias cliqz-bim="~/workspace/scripts/cliqz/bim"
+alias cliqz-enzo="~/workspace/scripts/cliqz/enzo"
