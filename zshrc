@@ -2,6 +2,8 @@
 # ~/.zshrc
 #
 source $ZSH/oh-my-zsh.sh
+unsetopt correct
+unsetopt correct_all
 
 plugins=(archlinux gem bundler git)
 
@@ -51,6 +53,23 @@ chruby 2.0.0 1>/dev/null
 xsetroot -solid "#545454" 2>/dev/null
 
 source ~/.aliases
-# ssh-add for cliqz check and zabbix to work properly
-eval `ssh-agent -s`
-ssh-add
+
+# add gpg-agent so with ssh support
+# before this we need to run:
+#	$ echo "enable-ssh-support" >> ~/.gnupg/gpg-agent.conf
+#
+# gpg-agent --daemon --enable-ssh-support \
+#       --write-env-file "${HOME}/.gpg-agent-info"
+# if [ -f "${HOME}/.gpg-agent-info" ]; then
+#    . "${HOME}/.gpg-agent-info"
+#   export GPG_AGENT_INFO
+#   export SSH_AUTH_SOCK
+#   export SSH_AGENT_PID
+# fi
+#
+# GPG_TTY=$(tty)
+# export GPG_TTY
+
+# path for zsh custom functions (e.g. fabric tab autocompletion)
+fpath=(~/.zsh/functions $fpath)
+

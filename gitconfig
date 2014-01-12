@@ -6,6 +6,7 @@
   st = status
   ll = log --pretty=oneline --abbrev-commit --max-count=15
   fp = format-patch
+  ch = checkout
 [color]
 	ui = auto
 [github]

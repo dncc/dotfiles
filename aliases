@@ -14,5 +14,8 @@ function cliqz-load-cluster() {
 	cliqz-dmz-socks
 }
 
-alias cliqz-bim="~/workspace/scripts/cliqz/bim"
-alias cliqz-enzo="~/workspace/scripts/cliqz/enzo"
+alias cliqz-bim="~/workspace/scripts/screen/bim"
+alias cliqz-enzo="~/workspace/scripts/screen/enzo"
+alias ps-ssh="~/workspace/scripts/ssh/ps"
+
+alias pytest="~/workspace/scripts/python/pytest"

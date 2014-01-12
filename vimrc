@@ -9,13 +9,14 @@ if has("gui_running")
 else
   " This is console Vim.
   if exists("+lines")
-    set lines=50
+	set lines=50
   endif
   if exists("+columns")
-    set columns=100
+	set columns=100
   endif
 endif
 
+let g:solarized_termcolors=256
 " The default for 'backspace' is very confusing to new users, so change it to a
 " more sensible value. Add "set backspace&" to your ~/.vimrc to reset it.
 set backspace+=indent,eol,start
@@ -23,9 +24,21 @@ set backspace+=indent,eol,start
 " unix file format (no ^M @EoL)
 set ff=unix
 
+" spiiph's
+set statusline=
+set statusline+=%<							   " cut at start
+set statusline+=%2*[%n%H%M%R%W]%*			   " flags and buf no
+set statusline+=%-40f						   " path
+set statusline+=[%{strlen(&ft)?&ft:'none'},    " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc},   " encoding
+set statusline+=%{&fileformat}]				   " file format
+set statusline+=%10((%l,%c)%)				   " line and column
+set statusline+=%P							   " percentage of file
+set laststatus=2
+
 "set nu!
-set background=dark
-colorscheme solarized
+" set background=dark
+colorscheme hhazure " solarized
 
 " keep old NERDTree |~, + instead of fency >
 let NERDTreeDirArrows=0
@@ -34,42 +47,50 @@ cd ~/workspace
 set fileencoding=utf-8
 set encoding=utf-8
 
-set nobackup                 " no backup files
+set nobackup				 " no backup files
 set nowritebackup
-set noswapfile               " no swap files
+set noswapfile				 " no swap files
 
 " set cursor to the matching string,
 " while typing the search pattern
 set incsearch
 
+" change cursor shape in different modes, *gnome-terminal* only
+if has("autocmd")
+  au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+  au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+  au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+endif
+
 " set pathogen runtime path manipulation
 execute pathogen#infect()
-syntax on
+syntax enable
 filetype plugin indent on
 
 "disable BOM character <U-FEFF>
 set nobomb
 
-set guioptions-=m            " no menu
-set guioptions-=T            " no toolbar
-set guioptions-=r            " no scrollbar
-set guioptions-=L            " no scrollbar for NTree
-set guioptions-=e            " no GUI tab bar
+set guioptions-=m			 " no menu
+set guioptions-=T			 " no toolbar
+set guioptions-=r			 " no scrollbar
+set guioptions-=L			 " no scrollbar for NTree
+set guioptions-=e			 " no GUI tab bar
 
-set guifont=Envy\ Code\ R\ 11 " Terminus
-
+set guifont=Envy\ Code\ R\ 11
+" set guifont=Andale\ Mono\ 10
 " ---------------------------------------------------------------
 " Text Formatting
 " ---------------------------------------------------------------
-set autoindent                " automatic indent new lines
-set smartindent               " be smart about indent
-" set expandtab               " expand tabs to spaces
+set autoindent				  " automatic indent new lines
+set smartindent				  " be smart about indent
+set expandtab				  " expand tabs to spaces
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set textwidth=80              " wrap at 80 chars by default
-"set cindent                  " disables , if uncomented
-set cinkeys=0{,0},:,0#,!,!^F
+" set noexpandtab
+" set textwidth=80				" wrap at 80 chars by default
+" set cindent				   " disables , if uncomented
+set cinkeys=0{,0},:,0#,!^F
 
 "set list listchars=tab:▷⋅
 "----------------------------------------------------------------
@@ -111,6 +132,8 @@ let NERDTreeChDirMode=2
 let g:NERDTreeWinSize=20
 map <C-c>X :NERDTreeToggle<CR>
 
+map <C-p> "+p:retab!<CR>
+
 " send current buffer to gist.github.com/dncc
 " :Gist gist-num to get gist from github
 map <C-c>G :Gist
@@ -149,14 +172,14 @@ map ,dt :tabnew %:h/<CR>
 " highlight & strip trailing whitespaces for _all_ files
 " ---------------------------------------------------------------------------
 
-highlight ExtraWhitespace ctermbg=red guibg=#DA4939
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-"
-autocmd BufWritePre * :%s/\s\+$//e
+" highlight ExtraWhitespace ctermbg=red guibg=#DA4939
+" match ExtraWhitespace /\s\+$/
+" autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+" autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+" autocmd BufWinLeave * call clearmatches()
+" "
+" autocmd BufWritePre * :%s/\s\+$//e
 
 " ---------------------------------------------------------------------------
 " Vim - Slime
