@@ -5,7 +5,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct
 unsetopt correct_all
 
-plugins=(archlinux gem bundler git)
+plugins=(git)
 
 autoload -U compinit
 compinit
@@ -44,7 +44,7 @@ source /usr/local/share/chruby/auto.sh
 # but we can set rubies directory with
 # RUBIES=(~/.rbenv/versions/*)
 # set default ruby
-chruby 2.0.0 1>/dev/null
+# chruby 2.0.0 1>/dev/null
 
 # start services with systemd here, I'm
 # sure there is a better place for this
