@@ -19,6 +19,9 @@ alias cliqz-enzo="~/workspace/scripts/screen/enzo"
 alias primary-screen="~/workspace/scripts/screen/x230"
 alias ps-ssh="~/workspace/scripts/ssh/ps"
 
+# tmux session
+alias cliqz-tmux="~/workspace/scripts/tmux/cliqz-tmux"
+
 alias pytest="~/workspace/scripts/python/pytest"
 
 function cliqz-tmux() {
@@ -28,3 +31,7 @@ function cliqz-tmux() {
 function cliqz-ssh() {
     ssh -A -t $CLIQZ_DMZ_GATEWAY ssh -A $1
 }
+
+# firefox aws profiles
+alias ffa-test="exec firefox -P test_aws --no-remote&"
+alias ffa-live="exec firefox -P live_aws --no-remote&"
