@@ -1,0 +1,28 @@
+snippet go
+	go func() {
+		${1}
+	}()
+#for over array, slice, string or map
+snippet fora
+	for ${1:n:=range} ${2:arrvar} {
+		${3}
+	}
+#for while
+snippet forw
+	for ${1:condition} {
+		${2}
+	}
+#for c
+snippet forc
+	for ${1:init}; ${2:condition}; ${3:post} {
+		${4}
+	}
+# for (;;) {}
+snippet fore
+	for {
+		${1}
+	}
+snippet if
+	if ${1:condition} {
+		${2}
+	}
