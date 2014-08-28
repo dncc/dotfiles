@@ -83,10 +83,10 @@ set guifont=Envy\ Code\ R\ 11
 " ---------------------------------------------------------------
 set autoindent				  " automatic indent new lines
 set smartindent				  " be smart about indent
-set expandtab				  " expand tabs to spaces
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set expandtab				  " expand tabs to spaces
 " set noexpandtab
 " set textwidth=80				" wrap at 80 chars by default
 " set cindent				   " disables , if uncomented
@@ -172,14 +172,14 @@ map ,dt :tabnew %:h/<CR>
 " highlight & strip trailing whitespaces for _all_ files
 " ---------------------------------------------------------------------------
 
-" highlight ExtraWhitespace ctermbg=red guibg=#DA4939
-" match ExtraWhitespace /\s\+$/
-" autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-" autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-" autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-" autocmd BufWinLeave * call clearmatches()
-" "
-" autocmd BufWritePre * :%s/\s\+$//e
+highlight ExtraWhitespace ctermbg=red guibg=#DA4939
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+"
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ---------------------------------------------------------------------------
 " Vim - Slime
