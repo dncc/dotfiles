@@ -72,4 +72,9 @@ source ~/.aliases
 
 # path for zsh custom functions (e.g. fabric tab autocompletion)
 fpath=(~/.zsh/functions $fpath)
-
+# ocaml
+source /home/dnc/ocamlbrew/ocaml-4.01.0/etc/ocamlbrew.bashrc
+# OPAM configuration
+. /home/dnc/ocamlbrew/ocaml-4.01.0/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+# export golang path
+export PATH=$PATH:/usr/local/go/bin
