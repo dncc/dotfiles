@@ -78,3 +78,13 @@ source /home/dnc/ocamlbrew/ocaml-4.01.0/etc/ocamlbrew.bashrc
 . /home/dnc/ocamlbrew/ocaml-4.01.0/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 # export golang path
 export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+export GOPATH=/home/dnc/gocode
+
+#Amazon EC2 CLI tools
+#/usr/local/ec2
+export JAVA_HOME="/usr"
+export EC2_HOME="/usr/local/ec2/ec2-api-tools-1.7.1.2"
+export PATH=$PATH:$EC2_HOME/bin
+
+

@@ -4,7 +4,7 @@ snippet go
 	}()
 #for over array, slice, string or map
 snippet fora
-	for ${1:n:=range} ${2:arrvar} {
+	for ${1:_, val} := range ${2:arr} {
 		${3}
 	}
 #for while
@@ -25,4 +25,14 @@ snippet fore
 snippet if
 	if ${1:condition} {
 		${2}
+	}
+snippet ife
+	if ${1:condition} {
+		${2}
+	} else if ${3:condition} {
+		${4}
+	}
+snippet fun
+	func ${1:name}(${2:args}) {
+		${3}
 	}

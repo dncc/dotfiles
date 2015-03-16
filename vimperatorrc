@@ -15,3 +15,8 @@ function toggle_navbar() {
     }
 toggle_navbar();
 EOF
+
+" move browser tabs
+map <C-S-P> :tabm -1<CR>
+map <C-S-N> :tabm +1<CR>
+
