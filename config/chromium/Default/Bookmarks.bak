@@ -1,0 +1,54 @@
+{
+   "checksum": "e27331fe1614248a96861f87115b83ed",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13047597949895302",
+            "id": "4",
+            "name": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+            "type": "url",
+            "url": "http://bookre.org/reader?file=376160&pg=3"
+         }, {
+            "date_added": "13047739891620830",
+            "id": "5",
+            "name": "BookReader - Viktor Pelevin. Generation P (fragment, англ.)",
+            "type": "url",
+            "url": "http://bookre.org/reader?file=376160&pg=4"
+         }, {
+            "date_added": "13070828005199717",
+            "id": "6",
+            "name": "TurnON Munich (München) - Meetup",
+            "type": "url",
+            "url": "http://www.meetup.com/TurnONMunich/"
+         }, {
+            "date_added": "13116710339809908",
+            "id": "8",
+            "name": "LeadIQ, the greatest email lead lists in the entire universe",
+            "type": "url",
+            "url": "https://leadiq.io/"
+         } ],
+         "date_added": "13047597811856167",
+         "date_modified": "13116710339809908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13047597811856182",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13047597811856185",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

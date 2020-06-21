@@ -1,0 +1,29 @@
+[Added Associations]
+application/x-xpinstall=thunderbird.desktop;
+x-scheme-handler/http=userapp-Firefox-EVAEXY.desktop;
+x-scheme-handler/https=userapp-Firefox-EVAEXY.desktop;
+x-scheme-handler/ftp=userapp-Firefox-EVAEXY.desktop;
+x-scheme-handler/chrome=userapp-Firefox-EVAEXY.desktop;
+text/html=userapp-Firefox-EVAEXY.desktop;
+application/x-extension-htm=userapp-Firefox-EVAEXY.desktop;
+application/x-extension-html=userapp-Firefox-EVAEXY.desktop;
+application/x-extension-shtml=userapp-Firefox-EVAEXY.desktop;
+application/xhtml+xml=userapp-Firefox-EVAEXY.desktop;
+application/x-extension-xhtml=userapp-Firefox-EVAEXY.desktop;
+application/x-extension-xht=userapp-Firefox-EVAEXY.desktop;
+video/x-ms-wmv=vlc.desktop;
+
+[Default Applications]
+text/html=userapp-Firefox-EVAEXY.desktop
+x-scheme-handler/http=userapp-Firefox-EVAEXY.desktop
+x-scheme-handler/https=userapp-Firefox-EVAEXY.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/ftp=userapp-Firefox-EVAEXY.desktop
+x-scheme-handler/chrome=userapp-Firefox-EVAEXY.desktop
+application/x-extension-htm=userapp-Firefox-EVAEXY.desktop
+application/x-extension-html=userapp-Firefox-EVAEXY.desktop
+application/x-extension-shtml=userapp-Firefox-EVAEXY.desktop
+application/xhtml+xml=userapp-Firefox-EVAEXY.desktop
+application/x-extension-xhtml=userapp-Firefox-EVAEXY.desktop
+application/x-extension-xht=userapp-Firefox-EVAEXY.desktop

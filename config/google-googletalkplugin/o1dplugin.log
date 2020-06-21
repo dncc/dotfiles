@@ -1,0 +1,65 @@
+[000:000] Cpu: 6.58.9, x4, 2601Mhz, 7686MB
+[000:000] Computer model: Not available
+[000:002] [o1d20123-1] Listening for HELLO.
+[000:024] [o1d20123-1] Shutting down instance.
+[000:024] [o1d20123-1] Client disconnected.
+[001:673] [o1d20123-2] Listening for HELLO.
+[001:725] [o1d20123-2] Client connected.
+[001:725] [o1d20123-2] Registered new shared memory segment at 100
+[002:461] [o1d20123-2] Sending rendering size change: 750x422
+[006:261] [o1d20123-2] Shutting down instance.
+[006:261] [o1d20123-2] Attached client while shutting down; sending shutdown notification.
+[006:261] [o1d20123-2] Client disconnected.
+[006:355] [o1d20123-3] Listening for HELLO.
+[006:380] [o1d20123-4] Listening for HELLO.
+[006:395] [o1d20123-3] Client connected.
+[006:395] [o1d20123-3] Registered new shared memory segment at 101
+[006:395] [o1d20123-4] Client connected.
+[006:395] [o1d20123-4] Registered new shared memory segment at 102
+[006:403] [o1d20123-5] Listening for HELLO.
+[006:429] [o1d20123-5] Client connected.
+[006:429] [o1d20123-5] Registered new shared memory segment at 103
+[006:496] [o1d20123-5] Sending rendering size change: 177x0
+[006:496] [o1d20123-5] Unmapping shared mem: 103
+[006:496] Created new pool buffer at 0x7fb3c0c16000, 57600 bytes
+[006:496] [o1d20123-5] Registered new shared memory segment at 104
+[006:630] [o1d20123-3] Sending rendering size change: 1374x0
+[006:630] [o1d20123-4] Sending rendering size change: 100x0
+[006:630] [o1d20123-4] Unmapping shared mem: 102
+[006:630] Created new pool buffer at 0x7fb3c0c25000, 14400 bytes
+[006:630] [o1d20123-4] Registered new shared memory segment at 105
+[006:932] [o1d20123-5] Sending rendering size change: 177x100
+[007:373] [o1d20123-4] Unmapping shared mem: 105
+[007:373] Created new pool buffer at 0x7fb3c0c29000, 32640 bytes
+[007:373] [o1d20123-4] Registered new shared memory segment at 106
+[007:591] [o1d20123-3] Sending rendering size change: 1280x720
+[007:702] [o1d20123-4] Sending rendering size change: 176x100
+[007:870] [o1d20123-4] Sending rendering size change: 177x100
+[007:896] [o1d20123-3] Unmapping shared mem: 101
+[007:896] Created new pool buffer at 0x7fb3c0c31000, 518400 bytes
+[007:897] [o1d20123-3] Registered new shared memory segment at 107
+[013:033] [o1d20123-4] Unmapping shared mem: 106
+[013:033] Created new pool buffer at 0x7fb3c0cb0000, 57600 bytes
+[013:034] [o1d20123-4] Registered new shared memory segment at 108
+[069:447] [o1d20123-4] Unmapping shared mem: 108
+[069:447] Created new pool buffer at 0x7fb3c0cbf000, 129600 bytes
+[069:447] [o1d20123-4] Registered new shared memory segment at 109
+[075:370] [o1d20123-4] Unmapping shared mem: 109
+[075:371] Created new pool buffer at 0x7fb3bf802000, 230400 bytes
+[075:371] [o1d20123-4] Registered new shared memory segment at 110
+[446:046] [o1d20123-3] Sending rendering size change: 935x526
+[1200:653] [o1d20123-3] Shutting down instance.
+[1200:653] [o1d20123-3] Attached client while shutting down; sending shutdown notification.
+[1200:654] [o1d20123-3] Client disconnected.
+[1200:677] [o1d20123-6] Listening for HELLO.
+[1200:986] Error(naclhelpers.cc:172): NaClReceiveDatagram failed : Connection reset by peer
+[1200:986] Error(flutemessagelistener.cc:316): [o1d20123-4] Failure to receive datagrams.
+[1201:009] [o1d20123-6] Shutting down instance.
+[1201:009] [o1d20123-6] Client disconnected.
+[1201:009] [o1d20123-5] Shutting down instance.
+[1201:009] [o1d20123-5] Attached client while shutting down; sending shutdown notification.
+[1201:009] [o1d20123-5] Client disconnected.
+[1201:010] [o1d20123-4] Shutting down instance.
+[1201:010] [o1d20123-4] Attached client while shutting down; sending shutdown notification.
+[1201:010] Error(naclhelpers.cc:62): NaClSendDatagram failed : Broken pipe
+[1201:010] [o1d20123-4] Client disconnected.

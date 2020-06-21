@@ -22,28 +22,29 @@ values."
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     auto-completion
+     ;; --------------------------------------------------------------
      ;; better-defaults
+     terraform
      emacs-lisp
      git
      go
      rust
+     auto-completion
      ;; markdown
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
-     ;; spell-checking
+     spell-checking ;; Space S
      ;; syntax-checking
      ;; version-control
      )
-
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages '() ;;screensend
+
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
@@ -98,10 +99,11 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(zenburn
+   dotspacemacs-themes '(misterioso
+                         tango
+                         zenburn
                          hc-zenburn
                          heroku
-                         misterioso
                          tango-dark
                          monokai
                          spacemacs-dark
@@ -112,10 +114,10 @@ values."
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
-   ;; size to make separators look not too crappy.
+   ;; size to make separators/t look not too crappy.
    ;; Source Code Pro
    dotspacemacs-default-font '("Ubuntu Mono"
-                               :size 14
+                               :size 22
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -240,7 +242,9 @@ values."
    ;; (default nil)
    dotspacemacs-whitespace-cleanup nil
    ;; rust
-   rust-enable-racer t
+   ;; rust-enable-racer t
+   ;;
+   evil-jumper-mode t
    ))
 
 (defun dotspacemacs/user-init ()
@@ -251,6 +255,7 @@ in `dotspacemacs/user-config'."
   )
 
 (defun dotspacemacs/user-config ()
+
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
@@ -266,6 +271,9 @@ layers configuration. You are free to put any user code."
   (global-set-key (kbd "C-h") " => ")
   (global-set-key (kbd "C-l") " -> ")
   (global-set-key (kbd "C-j") " <- ")
+
+  (define-key global-map (kbd "C-+") 'text-scale-increase)
+  (define-key global-map (kbd "C--") 'text-scale-decrease)
 
   ;; helm-occur
   (global-set-key (kbd "M-f") 'helm-occur)
@@ -312,6 +320,22 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
   ;; minimal fringe
   (fringe-mode 1)
+
+  ;; ;; add rust snippets
+  ;; (add-to-list 'load-path "/home/dnc/workspace/rust/rust-snippets")
+  ;; (autoload 'rust-snippets/initialize "rust-snippets")
+  ;; (eval-after-load 'yasnippet
+  ;;   '(rust-snippets/initialize))
+
+  ;; screensend.el
+  (load-file "/home/dnc/workspace/elpa/screensend.el/screensend.el")
+  (require 'screensend)
+  (global-set-key (kbd "C-c v") 'tmux-select)
+  (global-set-key (kbd "C-c c") 'tmux-send)
+
+  ;; save emacs temporary files in ~/.emacs.d/auto-save directory
+  (setq auto-save-file-name-transforms
+        `((".*" ,(concat user-emacs-directory "auto-save/") t)))
   )
 
 ;; This function is run after Spacemacs sets itself up, in here you can customize
@@ -339,3 +363,21 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 ;; create a new file
 ;; <Space>-b-s
+
+;; toggle disable/enable parenteses
+;; <Space>-t-p
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "da15b6c37879302bc0d751e1f53db16d0f610df612f0b1edc1ec514dddb1ba23" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))

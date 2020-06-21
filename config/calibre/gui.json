@@ -1,0 +1,276 @@
+{
+  "plugin config dialog:File type:K4PC, K4Mac, Mobi DeDRM": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywABAAAAAAmtAAABYgAACqwAAAHaAAAJrQAAAWIAAAqsAAAB2gAAAAAAAA=="
+  }, 
+  "quick_start_guide_added": true, 
+  "plugin config dialog:File type:DeDRM": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAt8AAACHgAADaYAAARkAAALfgAAAh4AAA2kAAAEYgAAAAAAAAAACgA="
+  }, 
+  "library_usage_stats": {
+    "/home/dnc/Calibre Library": 67
+  }, 
+  "viewer_image_popup_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAL+AAAALwAABwEAAAWeAAADAAAAAC8AAAb/AAAFnAAAAAAAAAAACgA="
+  }, 
+  "book_details_splitter_horizontal_state": [
+    true, 
+    200
+  ], 
+  "jobs view column layout2": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAABAAAB9AAAAAUAAAAA"
+  }, 
+  "grid view visible": false, 
+  "plugin config dialog:File type:eReader PDB 2 PML": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywABAAAAAAjfAAABbgAACdoAAAH0AAAI3wAAAW4AAAnaAAAB9AAAAAAAAA=="
+  }, 
+  "convert_single_dialog_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAMsAAABkAAABy8AAARNAAADLgAAAZAAAActAAAESwAAAAAAAAAACgA="
+  }, 
+  "convert_bulk_dialog_geom": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAChAAAAHAAABQ4AAALZAAAAowAAABwAAAUMAAAC1wAAAAAAAAAACgA="
+  }, 
+  "card_b_view books view state": {
+    "column_alignment": {
+      "timestamp": "center", 
+      "size": "center"
+    }, 
+    "column_sizes": {
+      "title": 67, 
+      "timestamp": 80, 
+      "inlibrary": 102, 
+      "collections": 111, 
+      "authors": 101, 
+      "size": 64
+    }, 
+    "languages_injected": true, 
+    "column_positions": {
+      "title": 1, 
+      "timestamp": 3, 
+      "inlibrary": 0, 
+      "collections": 5, 
+      "authors": 2, 
+      "size": 4
+    }, 
+    "sort_history": [
+      [
+        "timestamp", 
+        false
+      ]
+    ], 
+    "hidden_columns": [], 
+    "last_modified_injected": true
+  }, 
+  "jobs view column layout": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAAAAAABAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAEAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAABAAABkAAAAAQAAAAA"
+  }, 
+  "custom_colors_for_color_dialog": [
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ]
+  ], 
+  "preferences_window_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywABAAAAAAeAAAAAowAADNUAAAL/AAAHggAAAKMAAAzTAAAC/QAAAAAAAA=="
+  }, 
+  "previous_sort_order_BooksView": {
+    "ondevice": true
+  }, 
+  "preferences dialog geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAp3AAAB7gAADhwAAAS/AAAKeQAAAe4AAA4aAAAEvQAAAAAAAAAACgA="
+  }, 
+  "card_a_view books view state": {
+    "column_alignment": {
+      "timestamp": "center", 
+      "size": "center"
+    }, 
+    "column_sizes": {
+      "title": 67, 
+      "timestamp": 80, 
+      "inlibrary": 102, 
+      "collections": 111, 
+      "authors": 101, 
+      "size": 64
+    }, 
+    "languages_injected": true, 
+    "column_positions": {
+      "title": 1, 
+      "timestamp": 3, 
+      "inlibrary": 0, 
+      "collections": 5, 
+      "authors": 2, 
+      "size": 4
+    }, 
+    "sort_history": [
+      [
+        "timestamp", 
+        false
+      ]
+    ], 
+    "hidden_columns": [], 
+    "last_modified_injected": true
+  }, 
+  "jobs_dialog_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywABAAAAAACMAAAAtgAAAwgAAALVAAAAjgAAALYAAAMGAAAC0wAAAAAAAA=="
+  }, 
+  "replace_scene_breaks_history": [
+    "", 
+    "<hr />", 
+    "\u2217 \u2217 \u2217", 
+    "\u2022 \u2022 \u2022", 
+    "\u2666 \u2666 \u2666", 
+    "\u2020 \u2020", 
+    "\u2021 \u2021 \u2021", 
+    "\u221e \u221e \u221e", 
+    "\u00a4 \u00a4 \u00a4"
+  ], 
+  "metasingle_window_geometry3": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywABAAAAAAeAAAAAOgAAC2EAAALZAAAHggAAADoAAAtfAAAC1wAAAAAAAA=="
+  }, 
+  "memory_view books view state": {
+    "column_alignment": {
+      "timestamp": "center", 
+      "size": "center"
+    }, 
+    "column_sizes": {
+      "title": 350, 
+      "timestamp": 95, 
+      "inlibrary": 102, 
+      "collections": 111, 
+      "authors": 150, 
+      "size": 64
+    }, 
+    "languages_injected": true, 
+    "column_positions": {
+      "title": 1, 
+      "timestamp": 3, 
+      "inlibrary": 0, 
+      "collections": 5, 
+      "authors": 2, 
+      "size": 4
+    }, 
+    "sort_history": [
+      [
+        "timestamp", 
+        false
+      ]
+    ], 
+    "hidden_columns": [], 
+    "last_modified_injected": true
+  }, 
+  "cover_browser_splitter_vertical_state": [
+    false, 
+    300
+  ], 
+  "duplicates-question-dialog-geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAZQAAADfAAACf8AAAUoAAAGUgAAA3wAAAn9AAAFJgAAAAAAAAAACgA="
+  }, 
+  "tag_browser_splitter_horizontal_state": [
+    true, 
+    200
+  ]
+}

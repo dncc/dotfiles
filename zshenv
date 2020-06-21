@@ -1,10 +1,9 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="m0nk"
 
 #R path
 export R_HOME="/usr/lib/R"
 #antlr path
-export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
+#export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
 
 # export ALTERNATE_EDITOR=""
 # ec is executable file in /usr/local/bin
@@ -12,7 +11,7 @@ export CLASSPATH="$CLASSPATH:/usr/local/antlr-3.4/lib/antlr-3.4-complete.jar"
 # exec /usr/bin/env emacsclient -c -a "" $*
 # or the same thing little bit different:
 # exec emacsclient --alternate-editor="" -c "$@"
-export EDITOR=/usr/bin/gvim
+export EDITOR=/usr/bin/vim
 
 # save lot of shell history
 export HISTSIZE=100000 SAVEHIST=100000 HISTFILE=$HOME/.zhistory
@@ -41,4 +40,3 @@ if [ -f "${SSH_ENV}" ]; then
 else
      start_agent;
 fi
-

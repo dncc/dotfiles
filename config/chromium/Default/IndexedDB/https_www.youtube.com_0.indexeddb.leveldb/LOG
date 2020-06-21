@@ -1,0 +1,3 @@
+2018/03/07-14:35:43.489 24732 Reusing MANIFEST /home/dnc/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/03/07-14:35:43.490 24732 Recovering log #3
+2018/03/07-14:35:43.490 24732 Reusing old log /home/dnc/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 

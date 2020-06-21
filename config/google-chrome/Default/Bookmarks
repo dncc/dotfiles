@@ -1,0 +1,36 @@
+{
+   "checksum": "ca8c401a2a8ef70e936c5a1de847ace4",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13132441845905457",
+            "id": "6",
+            "name": "Full text of \"Nine humorous tales\"",
+            "type": "url",
+            "url": "file:///home/dnc/downloads/Full%20text%20of%20%22Nine%20humorous%20tales%22.html"
+         } ],
+         "date_added": "13132441835661921",
+         "date_modified": "13132441845905457",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13132441835661927",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13132441835661928",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

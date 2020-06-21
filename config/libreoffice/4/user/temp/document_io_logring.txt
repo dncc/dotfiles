@@ -1,0 +1,257 @@
+10m0(Build:2)
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+Element does not exist and cannot be created: "_MS_VBA_Macros"
+Rethrow
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+Element does not exist and cannot be created: "_MS_VBA_Macros"
+Rethrow
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1528: storeSelf
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1202: Save
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1270: Save: Alien to Alien
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+Element does not exist and cannot be created: "_MS_VBA_Macros"
+Rethrow
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1615: successful saving.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1383: Storing in own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1432: Save as own format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:422: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1449: Thumbnail creation.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1463: Preserve versions.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1657: storeAsURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+Element does not exist and cannot be created: "_MS_VBA_Macros"
+Rethrow
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1528: storeSelf
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1202: Save
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1270: Save: Alien to Alien
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+Element does not exist and cannot be created: "_MS_VBA_Macros"
+Rethrow
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1615: successful saving.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1528: storeSelf
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1202: Save
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1270: Save: Alien to Alien
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+Element does not exist and cannot be created: "_MS_VBA_Macros"
+Rethrow
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1698: storeToURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1116: Begin
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1317: SaveAs/Export
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1330: Locking
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1544: Storing in alien format.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3103: Storing succeeded!
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1657: Medium commit.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:1668: Storing is successful.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1615: successful saving.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:1657: storeAsURL
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objstor.cxx:2646: 
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/objmisc.cxx:260: Resetting Error.
+/build/libreoffice-OypX7x/libreoffice-5.1.4/sfx2/source/doc/sfxbasemodel.cxx:3122: Storing failed!

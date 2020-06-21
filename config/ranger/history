@@ -1,0 +1,13 @@
+del
+delete seriously? yes
+search oil
+delete seriously? y
+delete 
+copymap 
+mkdir test-doker-search
+rm terraform.tfvars_
+delete terraform.tfvars_
+delete
+
+cd 
+cd .

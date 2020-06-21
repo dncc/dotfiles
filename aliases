@@ -9,12 +9,74 @@ alias gch="git checkout"
 alias gb="git branch"
 alias gl="git log"
 alias gs="git status"
+alias gsl="git stash list"
+alias gll="git log --graph --oneline  --decorate --date=short --all --pretty=format:'%C(bold blue)%h%C(reset) %C(cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(bold cyan)- %an%C(reset)'"
+
+alias gbd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+function gs-pop() {
+    git stash pop stash@{$1}
+}
+
+function gs-save() {
+    echo "git stash save $1"
+    git stash save "$1"
+}
+
+function gs-apply() {
+    git stash apply stash@{$1}
+}
+
+function gs-show() {
+    echo "git stash show -p stash@{$1}"
+    git stash show -p stash@{$1}
+}
+
+function gs-drop-range() {
+    COUNTER=$1
+    while [  $COUNTER -gt $2 ]; do
+        echo "Droping stash@{$COUNTER}"
+        git stash drop stash@{$COUNTER}
+        let COUNTER=COUNTER-1
+    done
+}
+
+function p3() {
+    source virtualenvwrapper.sh
+    workon p3
+}
+
+function dp2() {
+    source ~/.data_pipeline_py2/bin/activate
+}
+
+function p37() {
+    source ~/.p37/bin/activate
+}
+
+function p38() {
+    source ~/.p38/bin/activate
+}
+
+function gta {
+    echo "add modified & deleted..."
+    git st | grep  'deleted\|modified' | awk '{ print $2 }' | xargs git add
+    git st
+}
+
+# k8s bash
+alias k8s-bash="~/workspace/scripts/k8s/k8s-bash"
+alias k8s-url="~/workspace/scripts/k8s/k8s-url"
+
+# go-lang
+alias go-update="~/workspace/scripts/golang/go-update.sh"
 
 # cliqz aliases
 alias cliqz-vpn="~/workspace/scripts/vpn/cliqz-vpn"
 alias cliqz-set-aws-env="~/workspace/cliqz/local/bin/setup_cluster_env.sh"
 alias cliqz-load-aws-env="source ~/workspace/cliqz/local/bin/load_cluster_env.sh"
 alias cliqz-dmz-socks="~/workspace/scripts/cliqz/dmz-ssh"
+alias cliqz-load-kops-aws-creds="source ~/.cliqz/load_kops_dev_aws_creds.sh"
 
 alias cliqz-check-aws="~/workspace/cliqz/deploy/cluster_tasks.sh check"
 alias cliqz-update-depend="~/workspace/cliqz/local/bin/depends.py update"
@@ -24,13 +86,22 @@ alias ec2-img="ec2-describe-images --aws-access-key $AWS_ACCESS_KEY_ID --aws-sec
 
 function cliqz-load-cluster() {
 	cliqz-load-aws-env $1
-	cliqz-dmz-socks
 }
 
-alias cliqz-bim="~/workspace/scripts/screen/bim"
-alias cliqz-enzo="~/workspace/scripts/screen/enzo"
-alias primary-screen="~/workspace/scripts/screen/x230"
-alias ps-ssh="~/workspace/scripts/ssh/ps"
+function xlive_aws {
+    tail -n 1 ~/workspace/cliqz/live_aws.txt | xclip -selection clipboard
+}
+
+# revoke a password and send it to the clipboard
+function xpass() {
+    pass $1 | tr -d '\n' | xclip -selection clipboard
+}
+
+# alias screens="~/workspace/scripts/cliqz/cliqz-screens"
+# alias cliqz-bim="~/workspace/scripts/screen/bim"
+# alias cliqz-enzo="~/workspace/scripts/screen/enzo"
+# alias primary-screen="~/workspace/scripts/screen/x230"
+# alias ps-ssh="~/workspace/scripts/ssh/ps"
 
 # tmux session
 alias cliqz-tmux="~/workspace/scripts/tmux/cliqz-tmux"
@@ -38,15 +109,15 @@ alias cliqz-tmux="~/workspace/scripts/tmux/cliqz-tmux"
 alias pytest="~/workspace/scripts/python/pytest"
 alias ppjson="python -mjson.tool"
 
-function cliqz-ssh() {
-    ssh -A -t $CLIQZ_DMZ_GATEWAY ssh -A $1
-}
-
 # firefox aws profiles
 alias ffa-test="exec firefox -P test_aws --no-remote&"
 alias ffa-live="exec firefox -P live_aws --no-remote&"
 
-# upload file with rsync through dmz clyqz gateway
-alias rup="~/workspace/scripts/cliqz/rup"
-alias rdw="~/workspace/scripts/cliqz/rdw"
+alias tf=terraform
+alias tg=terragrunt
+alias cat="batcat --style=plain"
 
+# revoke a password and send it to the clipboard
+function uclip() {
+    ~/workspace/scripts/python/under_clip $@
+}

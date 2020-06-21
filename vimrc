@@ -1,20 +1,6 @@
+set termguicolors
 set nocompatible
 set hidden
-
-" maximize gvim window
-if has("gui_running")
-  " GUI is running or is about to start.
-  " Maximize gvim window.
-  set lines=999 columns=999
-else
-  " This is console Vim.
-  if exists("+lines")
-	set lines=50
-  endif
-  if exists("+columns")
-	set columns=100
-  endif
-endif
 
 let g:solarized_termcolors=256
 " The default for 'backspace' is very confusing to new users, so change it to a
@@ -38,12 +24,10 @@ set laststatus=2
 
 "set nu!
 " set background=dark
-colorscheme hhazure " solarized
+" colorscheme zenburn
+" colorscheme hhazure
 
-" keep old NERDTree |~, + instead of fency >
-let NERDTreeDirArrows=0
-
-cd ~/workspace
+cd ~/workspace/cliqz/search-cache
 set fileencoding=utf-8
 set encoding=utf-8
 
@@ -62,11 +46,6 @@ if has("autocmd")
   au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
 endif
 
-" set pathogen runtime path manipulation
-execute pathogen#infect()
-syntax enable
-filetype plugin indent on
-
 "disable BOM character <U-FEFF>
 set nobomb
 
@@ -76,8 +55,12 @@ set guioptions-=r			 " no scrollbar
 set guioptions-=L			 " no scrollbar for NTree
 set guioptions-=e			 " no GUI tab bar
 
-set guifont=Envy\ Code\ R\ 11
+" set guifont=Envy\ Code\ R\ 11
 " set guifont=Andale\ Mono\ 10
+" set guifont=Ubuntu\ Mono\ 9
+" set guifont=Monospace\ Regular\ 7.5
+" set guifont=Inconsolata-dz\ 10
+" set guifont=ProggyCleanTT\ 12
 " ---------------------------------------------------------------
 " Text Formatting
 " ---------------------------------------------------------------
@@ -100,39 +83,9 @@ set cinkeys=0{,0},:,0#,!^F
 " instead of '\'
 let mapleader = ","
 
-"" Lusty Finder mappings
-" map <Leader>f :LustyFilesystemExplorer<CR>
-" map <Leader>h :LustyFilesystemExplorerFromHere<CR>
-" map <Leader>b :LustyBufferEx
-" map <Leader>g :LustyBufferGrep<CR>
-
-" fuzzy finder mappings
-map <C-x>f :FufFile<CR>
-map <C-x>b :FufBuffer<CR>
-map <C-x>d :FufDir<CR>
-
-" try command-T it crashes vim
-" after a file is selected use <C-v>, <C-t>
-" to open the file with vertical split, or
-" in a new tab, <C-e> to the end of list,
-" <C-a> to the start, <C-c> quit.
-" nnoremap <silent> <C-x><C-f> :CommandT<CR>
-" nnoremap <silent> <C-x>b :CommandTBuffer<CR>
-" nnoremap <silent> <C-x>t :CommandTTag<CR>
-" " refresh command-t cache with new files
-" nnoremap <silent> <C-x>l :CommandTFlush<CR>
-
 " make window wider/narrower
 map <C-h> <C-W><
 map <C-l> <C-W>>
-
-" NERDTree config
-set autochdir
-let NERDTreeChDirMode=2
-let g:NERDTreeWinSize=20
-map <C-c>X :NERDTreeToggle<CR>
-
-map <C-p> "+p:retab!<CR>
 
 " send current buffer to gist.github.com/dncc
 " :Gist gist-num to get gist from github

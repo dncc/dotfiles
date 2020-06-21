@@ -1,0 +1,7 @@
+[Data Source]
+DisplayName=dragan@cliqz.com
+Enabled=true
+Parent=1497436373.5452.1@t460s
+
+[Mail Transport]
+BackendName=ews

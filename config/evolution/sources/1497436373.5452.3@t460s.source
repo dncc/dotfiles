@@ -1,0 +1,13 @@
+[Data Source]
+DisplayName=dragan@cliqz.com
+Enabled=true
+Parent=1497436373.5452.1@t460s
+
+[Refresh]
+Enabled=true
+IntervalMinutes=60
+
+[Mail Account]
+BackendName=ews
+IdentityUid=1497436373.5452.0@t460s
+ArchiveFolder=
